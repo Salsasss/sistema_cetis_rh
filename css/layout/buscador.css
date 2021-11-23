@@ -1,0 +1,128 @@
+/*Contenedor individual del Buscador*/
+
+.buscador {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid var(--grisFuerte);
+}
+
+.buscador.grande {
+    border: 1px solid var(--grisFuerte);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .buscador {
+        column-gap: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .buscador {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.formulario.grande.flex {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .formulario.grande.flex {
+        max-width: 100rem;
+    }
+}
+
+
+/** Buscador**/
+
+.buscador.grande {
+    width: 100%;
+}
+
+
+/*Input del buscador*/
+
+.buscador input:not([type="submit"]) {
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 0;
+    border: 1px solid var(--grisFuerte);
+}
+
+
+/*Boton del Buscador*/
+
+.formulario.grande input[type="submit"] {
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 4px 0 var(--azulFuerte);
+}
+
+
+/*Contenedor del Submit*/
+
+.buscador-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Input del buscador*/
+
+.buscador-input select {
+    width: 20rem;
+    margin: 0;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid var(--grisFuerte);
+}
+
+.buscador-input input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0;
+}
+
+
+/*Link del Submit*/
+
+.buscador-input a {
+    height: 42px;
+}
+
+
+/*Imagen del Submit*/
+
+.boton-buscar {
+    max-width: initial;
+    height: 42px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*Link del boton Borrar busqueda*/
+
+.link-borrar-busqueda {
+    height: 42px;
+}
+
+
+/*Boton Borrar busqueda*/
+
+.borrar-busqueda {
+    max-width: initial;
+    height: 42px;
+    border-radius: 5px;
+}
+
+
+/*Buscador Administrar Usuarios*/

@@ -1,0 +1,133 @@
+/** Header **/
+
+.header {
+    background-color: var(--grisMuyFuerte);
+    padding: 1rem 5rem;
+}
+
+.barra-superior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .barra-superior {
+        flex-direction: row;
+    }
+}
+
+.barra-superior a {
+    display: flex;
+}
+
+
+/*Logo CETis 15*/
+
+@media (min-width: 768px) {
+    .barra-superior .logo {
+        max-width: 22rem;
+    }
+}
+
+.portada {
+    background-image: url(../multimedia/imagenes/image2.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/** Estilos  de la Navegacion **/
+
+.navegacion .enlace {
+    margin: 0;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: var(--bold);
+}
+
+.enlace.cerrar-sesion:hover {
+    color: var(--rojo);
+}
+
+.navegacion {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion .enlace {
+    margin: 0 2rem;
+}
+
+.enlaces-externos {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .enlaces-externos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2.5rem;
+    }
+}
+
+
+/*Icono Sitio web*/
+
+.icono {
+    display: block;
+    max-width: 4rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .enlaces-externos .icono {
+        display: block;
+    }
+    .icono {
+        margin-bottom: 0;
+    }
+}
+
+
+/*Icono Facebook*/
+
+.icono.facebook {
+    width: 5.4rem;
+}
+
+@media (min-width: 768px) {
+    .icono.facebook {
+        margin-bottom: .1rem;
+    }
+}
+
+
+/*Navegacion*/
+
+.navegacion .enlace {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.navegacion a:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+    }
+    .navegacion .enlace {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+}

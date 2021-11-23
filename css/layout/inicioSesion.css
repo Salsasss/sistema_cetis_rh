@@ -1,0 +1,263 @@
+/*Fondo*/
+
+.fondo-todo {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .fondo-todo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fondo-todo {
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+}
+
+.contenido-izquierda {
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .contenido-izquierda {
+        display: block;
+        visibility: visible;
+        height: 100vh;
+        background-image: url(../../multimedia/imagenes/fondoInicio.png);
+        background-size: cover;
+    }
+}
+
+.derecha {
+    height: 100vh;
+    background-color: var(--grisMuyFuerte);
+}
+
+.inicio-sesion {
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .inicio-sesion {
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+}
+
+
+/*Logo CETiS 15*/
+
+.logo-inicio {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .logo-inicio {
+        max-width: 95%;
+        padding-top: 0;
+        margin-top: 1rem;
+    }
+}
+
+.contenedor-fieldset {
+    border: none;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-fieldset {
+        margin: 0 3rem;
+    }
+}
+
+
+/*Contenedor del formulario*/
+
+.contenido-inicio {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+}
+
+
+/*Labels*/
+
+.inicio-sesion label {
+    color: white;
+    font-size: 2rem;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/*Inputs*/
+
+.contenido-inicio .campo input:not([type="submit"]) {
+    background-color: white;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.contenido-inicio .campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Boton Iniciar sesion*/
+
+.boton.boton-centrado {
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+
+/*Portada*/
+
+.titulo-pagina {
+    color: white;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 7rem;
+    font-weight: var(--black);
+}
+
+.mensaje-sesion-recuperar {
+    width: 40rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.mensaje-sesion-recuperar.bajo {
+    margin-top: 10rem;
+}
+
+.mensaje-sesion {
+    width: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+
+/*Recuperar cuenta*/
+
+
+/*Link Olvidaste tu contraseña*/
+
+.link-recuperar {
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+    color: var(--azul);
+    text-align: center;
+}
+
+.link-recuperar:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .link-recuperar {
+        font-size: 2rem;
+    }
+}
+
+
+/*Contenedor del formulario para buscar la cuenta*/
+
+.contenido-recuperar {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+}
+
+.contenido-recuperar.chica {
+    height: 20rem;
+}
+
+
+/*Inputs*/
+
+.contenido-recuperar .campo input:not([type="submit"]) {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+
+
+/*Contenedor de los Botones*/
+
+.contenedor-buscar {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-buscar {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+
+/*Botones*/
+
+.contenedor-buscar .boton {
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-buscar .boton {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+/*Boton Generar nueva contraseña*/
+
+.contenido-recuperar .accion-recuperar {
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.contenido-recuperar .dato {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: var(--black);
+}
+
+.boton-mostrar-contra {
+    display: block;
+    width: 32px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

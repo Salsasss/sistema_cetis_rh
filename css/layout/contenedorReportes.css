@@ -1,0 +1,53 @@
+.reporte-botones-ver {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: .5rem;
+}
+
+.contenido-reporte-botones-ver {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-boton-reporte {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Contenedor de todos los checkbox*/
+
+.contenedor-checks {
+    display: flex;
+    justify-content: flex-end;
+    height: 6rem;
+}
+
+
+/*Contenedor del checkbox*/
+
+.contenedor-check {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.check-ver {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    margin-right: .5rem;
+}
+
+.contenedor-check label {
+    display: block;
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: var(--black);
+}
+
+.contenedor-check label:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+/** Mensajes a la Hora de dar de alta o editar Docente**/
+
+.mensaje {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-weight: var(--bold);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    list-style-position: inside;
+}
+
+.error {
+    background-color: rgb(185, 0, 0);
+}
+
+.exito {
+    background-color: rgb(0, 185, 0);
+}

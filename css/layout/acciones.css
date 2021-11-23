@@ -1,0 +1,136 @@
+/*Fila con las Acciones*/
+
+.acciones {
+    padding: 0;
+}
+
+
+/*Contenedor con las Acciones*/
+
+@media (min-width: 1024px) {
+    .contenedor-acciones {
+        position: relative;
+    }
+}
+
+
+/*Boton Acciones*/
+
+.mostrar-acciones {
+    display: none;
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .mostrar-acciones {
+        display: block;
+    }
+}
+
+.mostrar-acciones.grande {
+    font-size: 2rem;
+}
+
+.contenedor-acciones:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-acciones-reporte:hover .submenu-dos {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Contenedor de las Acciones*/
+
+.submenu {
+    margin: 0;
+    padding: 1rem;
+    column-gap: .5rem;
+    row-gap: .5rem;
+}
+
+@media (min-width: 768px) {
+    .submenu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .submenu {
+        padding: 1.5rem;
+        margin: 0;
+        display: block;
+        width: 21rem;
+        background-color: rgba(63, 91, 230, .8);
+        backdrop-filter: blur(5px);
+        position: absolute;
+        overflow: visible;
+        transition: all 0.1s;
+        opacity: 0;
+        visibility: hidden;
+        left: -244px;
+        top: 1px;
+        border: 1px solid var(--azulFuerte);
+    }
+}
+
+
+/*Boton Accion*/
+
+.submenu .li-accion {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .submenu .li-accion {
+        margin-bottom: 0rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .submenu .li-accion {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*Link de la Accion*/
+
+.submenu .li-accion a {
+    padding: 1rem;
+}
+
+
+/*Contenedor de los Reportes*/
+
+.submenu-dos {
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+    .submenu-dos {
+        padding: 1.5rem;
+        margin: 0;
+        display: block;
+        width: 21rem;
+        background-color: rgba(63, 91, 230, .8);
+        backdrop-filter: blur(5px);
+        position: absolute;
+        overflow: visible;
+        transition: all 0.1s;
+        opacity: 0;
+        visibility: hidden;
+        right: 240px;
+        top: 211px;
+        border: 1px solid var(--azulFuerte);
+    }
+}

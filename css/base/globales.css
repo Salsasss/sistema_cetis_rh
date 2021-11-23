@@ -1,0 +1,170 @@
+/*Estilos Globales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*Reset para REMS - 62.5% = 10px de 16px */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6 rem;
+    line-height: 2;
+    margin: 0;
+    background-color: lightgray;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+input,
+select {
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: var(--bold);
+}
+
+.contenido-centrado {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-centrado.derecha {
+    margin: 0;
+    -ms-flex-align: end;
+}
+
+.contenedor-chico {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.contenedor-mediano {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-algo-grande {
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+.contenedor-grande {
+    max-width: 180rem;
+    margin: 0 auto;
+}
+
+.contenedor-reporte {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.reporte {
+    max-width: 150rem;
+}
+
+.reporte-chico {
+    max-width: 104rem;
+    margin: 2rem auto;
+}
+
+.contenido-submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion {
+    padding: 1rem;
+}
+
+.parrafo {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--bold);
+}
+
+.parrafo.blanco {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.texto-izquierda {
+    text-align: left;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.gris {
+    color: gray;
+}
+
+
+/*Elemento que solo existe en la version Mobil*/
+
+.mobil {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .mobil {
+        display: none;
+    }
+}
+
+
+/*Elemento que solo existe en la version Tablet*/
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+}
+
+
+/*Elemento que solo existe en la version Desktop*/
+
+.tablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .tablet {
+        display: block;
+    }
+}

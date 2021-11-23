@@ -1,0 +1,150 @@
+/** Baja de Docentes **/
+
+
+/*Contenedor de la informacion del Docente*/
+
+.informacion-docente {
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    border: 2px solid var(--azulFuerte);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .informacion-docente {
+        width: 70%;
+        margin: 1rem auto;
+    }
+}
+
+
+/*Contenedor de cada campo de informacion*/
+
+@media (min-width: 768px) {
+    .campo-informacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+/*Nombre del dato*/
+
+.parrafo {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .parrafo {
+        margin: auto 0;
+        text-align: right;
+    }
+    .parrafo.texto-izquierda {
+        margin: auto 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .parrafo.texto-izquierda {
+        text-align: left;
+    }
+}
+
+
+/*Dato del docente*/
+
+.dato {
+    background-color: #e1e1e1;
+    margin: .5rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--regular);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .dato {
+        margin: 1rem 0;
+    }
+}
+
+
+/*Contenedor del Boton de Informacion docente*/
+
+.contenedor-informacion-docente {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contenedor-informacion-docente {
+        width: 73.5%;
+        margin: 0 auto;
+    }
+}
+
+
+/*Boton de Informacion docente*/
+
+.contenedor-informacion-docente .boton {
+    width: 100%;
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-informacion-docente .boton {
+        width: initial;
+        margin: 0;
+    }
+}
+
+
+/*Boton de Baja Docente*/
+
+.formulario .boton-baja {
+    margin: 0;
+}
+
+
+/*Contenedor del dato a la izquierda */
+
+.informacion-docente .dato.izquierda {
+    text-align: left;
+    font-weight: var(--bold);
+    margin: 0;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.informacion-docente .formulario {
+    width: 100%;
+    margin: 0;
+}
+
+.informacion-docente .formulario textarea {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: var(--regular);
+}
+
+.contenido-submit-permiso {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.informacion-docente.permiso {
+    margin-bottom: 2rem;
+}
+
+.boton.verde.prejubilacion {
+    margin-top: 1rem;
+}
+
+.boton-permiso {
+    margin: 0;
+}

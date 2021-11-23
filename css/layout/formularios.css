@@ -1,0 +1,143 @@
+/** Inicio de sesion**/
+
+.formulario {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+/** Formulario **/
+
+.formulario fieldset {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 2rem;
+    padding-right: 3rem;
+    padding-top: 0;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .formulario fieldset {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
+
+.formulario fieldset:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--black);
+    text-transform: uppercase;
+}
+
+.formulario label {
+    font-size: 2rem;
+    font-weight: var(--bold);
+}
+
+
+/*Boton Submit*/
+
+.formulario .boton {
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .formulario .boton {
+        margin: 0;
+    }
+}
+
+.parrafo-clave {
+    padding: 0;
+    padding-right: 1rem;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: var(--bold);
+}
+
+.clave {
+    display: block;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: var(--bold);
+    background-color: #E1E1E1;
+    border-radius: 5px;
+}
+
+.fecha {
+    font-size: 2rem;
+    font-weight: var(--black);
+}
+
+input:not([type="submit"], [type="checkbox"]),
+select {
+    /*Selecciona todos los tipos que no sean submit*/
+    /*background-color: #E1E1E1;*/
+    background-color: #E1E1E1;
+    height: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    display: block;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="date"],
+input[type="file"] {
+    height: 2rem;
+}
+
+select {
+    width: 101%;
+    height: 4rem;
+}
+
+.titulo {
+    text-align: center;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .campo-doble {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.documentos .inputfile {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+/*Formulario para registrar un Nuevo Usuario*/
+
+.formulario.nuevo-usuario {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .formulario.nuevo-usuario {
+        width: 70%;
+    }
+}
