@@ -1,0 +1,84 @@
+/*Contenedor de la parte de Arriba*/
+
+.parte-arriba-documento {
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .parte-arriba-documento {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.documentos-Docentes {
+    margin: 0 auto;
+}
+
+
+/*Nombre del Documento*/
+
+.nombre-documento {
+    font-size: 2rem;
+    font-weight: var(--bold);
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nombre-documento {
+        text-align: left;
+    }
+}
+
+
+/*Boton Descargar*/
+
+@media (min-width: 768px) {
+    .boton.verde.descargar {
+        display: initial;
+    }
+}
+
+.parte-arriba-documento p {
+    padding: 0;
+    padding-right: 2rem;
+}
+
+
+/*Documento*/
+
+.documento {
+    height: 110rem;
+    margin: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .documento {
+        height: 110rem;
+        margin: 2rem 0;
+    }
+}
+
+.documento iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Separador*/
+
+.separador {
+    width: 95%;
+    margin-bottom: 5rem;
+    height: 1px;
+    background-color: black;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .separador {
+        width: 100%;
+    }
+}

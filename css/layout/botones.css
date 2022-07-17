@@ -1,0 +1,132 @@
+/**Botones**/
+
+.boton {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    color: var(--blanco);
+    background-color: var(--azul);
+    font-size: 2rem;
+    font-weight: var(--bold);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .boton.verde.reporte {
+        display: initial;
+    }
+}
+
+.boton.verde.desktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .boton.verde.desktop {
+        display: block;
+    }
+}
+
+.boton-baja {
+    margin: 1rem;
+}
+
+.boton.accion {
+    margin: 0;
+    background-color: rgb(136, 133, 133);
+    padding: 1rem;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+}
+
+.boton.accion.editar {
+    box-shadow: 0 4px 0 var(--verdeMasFuerte);
+}
+
+.boton.verde {
+    padding: 1.5rem;
+    background-color: var(--verde);
+    box-shadow: 0 4px 0 var(--verdeMasFuerte);
+}
+
+.boton.verde.submit {
+    padding: 2rem;
+}
+
+.boton.verde.mostrar-acciones {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .boton.verde.mostrar-acciones {
+        display: flex;
+    }
+}
+
+.boton.azul {
+    padding: 2rem;
+    background-color: var(--azulAlgoFuerte);
+    box-shadow: 0 4px 0 var(--azulFuerte);
+}
+
+.boton.verde:hover {
+    background-color: var(--verdeFuerte);
+}
+
+.boton.accion.eliminar {
+    padding: 1rem;
+    background-color: var(--rojo);
+    box-shadow: 0 4px 0 var(--rojoFuerte);
+}
+
+.boton.accion.editar,
+.boton-verde {
+    background-color: var(--verde);
+}
+
+.boton:hover {
+    background-color: var(--azulFuertePeroNoTanto);
+}
+
+.boton.accion.editar:hover {
+    background-color: var(--verdeFuerte);
+}
+
+.boton.accion.eliminar:hover {
+    background-color: var(--rojoFuerte);
+}
+
+.boton.accion.eliminar.usuario {
+    margin: .5rem 0;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+}
+
+.boton.accion:last-of-type {
+    margin-right: 0;
+}
+
+.boton.descargar {
+    border-color: var(--verde);
+    background-color: var(--verde);
+}
+
+.boton.solo-admin {
+    background-color: gray;
+}
+
+.boton.solo-admin:hover {
+    cursor: pointer;
+}
+
+.boton.cancelar {
+    background-color: var(--gris);
+    box-shadow: 0 4px 0 var(--grisFuerte);
+}

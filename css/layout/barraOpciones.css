@@ -1,0 +1,106 @@
+/*Opcion*/
+
+.opcion {
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: var(--black);
+    text-transform: uppercase;
+    background-color: var(--azulFuertePeroNoTanto);
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .opcion {
+        font-size: 1rem;
+    }
+}
+
+.opcion.principal:hover {
+    background-color: var(--azulFuerte);
+}
+
+.nuevo-usuario {
+    text-transform: none;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .opcion {
+        width: auto;
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.3rem;
+        font-weight: var(--black);
+    }
+    .opcion.redondo.boton-verde {
+        width: 20rem;
+    }
+}
+
+.opcion.verde {
+    box-shadow: 0 4px 0 var(--verdeMasFuerte);
+}
+
+
+/*Contenedor de Opciones*/
+
+.barra-opciones {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+@media (min-width: 768px) {
+    .barra-opciones {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/*Opcion*/
+
+.barra-opciones .opcion {
+    width: 100%;
+    height: 6rem;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid var(--azulFuerte);
+}
+
+@media (min-width: 768px) {
+    .barra-opciones .opcion {
+        border: none;
+        border-right: 1.5px solid var(--azulFuerte);
+    }
+}
+
+@media (min-width: 1110px) {
+    .barra-opciones .opcion {
+        height: 3rem;
+    }
+}
+
+
+/*Boton Nuevo Usuario Mobil*/
+
+.boton.verde.mobil {
+    display: block;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .boton.verde.mobil {
+        display: none;
+        visibility: hidden;
+    }
+}

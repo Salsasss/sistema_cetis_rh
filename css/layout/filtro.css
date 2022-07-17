@@ -1,0 +1,144 @@
+/** Titulos Filtro **/
+
+@media (min-width: 1024px) {
+    .titulos-filtro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.filtro-titulo.desktop {
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+    .filtro-titulo.mobil {
+        display: none;
+        visibility: hidden;
+    }
+    .filtro-titulo.desktop {
+        display: initial;
+        visibility: visible;
+    }
+}
+
+
+/** Filtro **/
+
+.filtro {
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .filtro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*Contenedores del Filtro y Visualizar-por*/
+
+.contenido-filtro {
+    background-color: #E1E1E1;
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenido-filtro.buscador.grande {
+    max-width: 100rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .contenido-filtro {
+        padding: 2rem;
+    }
+}
+
+
+/*Contenedor de Visualizar-por*/
+
+.ver-por {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    border: 1px solid var(--grisFuerte);
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .ver-por {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .ver-por {
+        display: grid;
+        grid-template-columns: 15% 20% 25% 35%;
+        flex-direction: row;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+
+/*Botones Visualizar-por*/
+
+.opcion.redondo {
+    background-color: var(--gris);
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 0 var(--grisFuerte);
+}
+
+@media (min-width: 768px) {
+    .opcion.redondo {
+        width: auto;
+        padding: .75rem 1.5rem;
+    }
+    .opcion.redondo.boton-verde {
+        width: auto;
+    }
+}
+
+.opcion.redondo.grande {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .opcion.redondo.grande {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*Botones Visualizar-por solo*/
+
+.opcion.redondo.solo {
+    width: 13rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.opcion.seleccionada {
+    background-color: var(--azulFuerte);
+}
+
+.opcion.redondo.seleccionada {
+    background-color: var(--azul);
+    box-shadow: 0 4px 0 var(--azulFuerte);
+}
+
+.opcion.redondo.seleccionada:hover {
+    background-color: var(--azulFuertePeroNoTanto);
+}

@@ -1,0 +1,41 @@
+/*Icono tres barras*/
+
+.mobile-menu {
+    background-color: var(--azulFuertePeroNoTanto);
+    box-shadow: 0 3px 3px var(--azulFuerte);
+    margin-bottom: 2px;
+}
+
+.iconos-menu {
+    display: block;
+    width: 5rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.iconos-menu:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+/*Opciones*/
+
+@media (max-width: 768px) {
+    .barra-opciones {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: visibility .1s ease-in-out, opacity .1s linear, height .1s linear;
+    }
+    .barra-opciones.visible {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+}

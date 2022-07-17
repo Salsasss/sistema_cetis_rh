@@ -1,0 +1,22 @@
+.permiso {
+    background-color: #e1e1e1;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.titulo-permiso {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+    margin: .5rem;
+}
+
+.titulo-permiso.largo {
+    background-color: #e1e1e1;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.permiso .campo-informacion .dato {
+    background-color: white;
+}

@@ -1,0 +1,33 @@
+:root {
+    /** Fuentes **/
+    --delgada: 300;
+    --regular: 400;
+    --bold: 700;
+    --black: 900;
+    /*Colores*/
+    /*Azul*/
+    --azulMuyClaro: #5271e0;
+    --azulClaro: #1e4bee;
+    --azul: #3f5be6;
+    --azulAlgoFuerte: #2C51DC;
+    --azulFuertePeroNoTanto: #183cbe;
+    --azulFuerte1: #19359c;
+    --azulFuerte: #0B2689;
+    /*Verde*/
+    --verde: rgb(39, 160, 55);
+    --verdeFuerte: rgb(16, 139, 33);
+    --verdeMasFuerte: rgb(18, 116, 33);
+    /*Rojo*/
+    --rojo: rgb(184, 28, 28);
+    --rojoFuerte: rgb(155, 36, 36);
+    --rojoMuyFuerte: rgb(97, 1, 1);
+    /*Amarillo*/
+    --amarillo: #bcbe25df;
+    --negro: #1a1b15;
+    --blanco: #FFFFFF;
+    /*Gris*/
+    --grisClaro: rgb(177, 172, 172);
+    --gris: gray;
+    --grisFuerte: rgb(82, 82, 82);
+    --grisMuyFuerte: #333333;
+}

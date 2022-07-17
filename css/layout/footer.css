@@ -1,0 +1,53 @@
+/**Footer**/
+
+.footer {
+    width: calc(100% - 10rem);
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+    background-color: var(--grisMuyFuerte);
+}
+
+@media (min-width: 768px) {
+    .footer {
+        width: 100%;
+    }
+}
+
+.footer.fixed {
+    position: fixed;
+    bottom: 0;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+
+/*Mensaje de Derechos de autor*/
+
+.derechos {
+    width: 100%;
+}
+
+.derechos p {
+    margin: 0 auto;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+}
+
+@media (min-width: 1024px) {
+    .derechos p {
+        padding-top: 0;
+    }
+}
