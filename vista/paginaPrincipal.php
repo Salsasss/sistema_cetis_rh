@@ -54,7 +54,7 @@
 <footer class="footer <?php if(isset($_GET['opc']) && !empty($_GET['opc']) && $_GET['opc']==2){echo 'fixed';}?>">
     <div class="footer-contenido">
         <div class="derechos">
-            <p>Todos los derechos reservados <?php echo $anio = Date('Y'); ?> &copy;</p>
+            <p>Aar&oacute;n Salas Ch&aacute;vez <?php echo $anio = Date('Y'); ?> &copy;</p>
         </div>      
     </div>
 </footer>

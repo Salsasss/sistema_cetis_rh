@@ -2,9 +2,6 @@
 date_default_timezone_set("America/Mexico_City");
 session_start();
 
-
-
-
 include('control/funciones/ctrlFunciones.php');
 include('control/funciones/ctrlFuncionesDocumentos.php');
 include('control/funciones/ctrlFuncionesObjetos.php');
@@ -70,7 +67,7 @@ if(isset($_SESSION['id_usuario']) && !empty($_SESSION['id_usuario'])){
             //Si ya existe muestra la pagina principal
             include('vista/paginaPrincipal.php');        
         }
-    ?>        
+    ?>
     <script src="js/funciones.js"></script>
 </body>
 </html>
